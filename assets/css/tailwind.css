@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50;
+}
+
+@layer components {
+  .btn {
+    @apply bg-[#12b488] text-white px-3 py-2 rounded-md text-sm text-white;
+  }
+
+  .btn-primary {
+    @apply bg-[#1C64F2] text-white px-3 py-2 rounded-md text-sm text-white;
+  }
+
+  .btn-error {
+    @apply bg-[#C81E1E] text-white px-3 py-2 rounded-md text-sm;
+  }
+
+  .btn-secondary {
+    @apply bg-[#4B5563] text-white text-sm px-3 py-2 rounded-md;
+  }
+  .card {
+    @apply p-3 rounded-md bg-white shadow-md h-full;
+  }
+
+  .form-control {
+    @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500;
+  }
+
+  .lable-form {
+    @apply block mb-2 text-sm font-medium text-gray-900;
+  }
+
+  .text-error {
+    @apply text-red-700;
+  }
+}
